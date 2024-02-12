@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процедуры лечения</title>
+    <link rel="stylesheet" href="styleframe.css">
+</head>
+<body>
+    <header>
+        <div class="profile-icon">
+            <img src="icons/Frame.png" alt="icons/dandruff 1 (Traced).png">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Наши специалисты</a></li>
+                <li><a href="#">Процедуры лечения волос</a></li>
+                <li><a href="#">Средства для лечения волос</a></li>
+            </ul>
+        </nav>
+        <div class="location-info">
+            <div class="location-icon">
+                <img src="icons/Group.png" alt="icons/dandruff 1 (Traced).png">
+            </div>
+            <div class="location-address">
+                <p>ул. Карла Маркса</p>
+            </div>
+        </div>
+        
+        <button class="appointment-button" id="show-popup">Запись на прием</button>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Запись на прием</h2>
+                <p>Заполните форму ниже для записи на прием:</p>
+                <form>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="date">Дата приема:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <button type="submit">Отправить</button>
+                </form>
+                <button id="close-popup">Закрыть</button>
+            </div>
+        </div>
+
+    </header>
+    <hr >
+    <div class="content-container">
+    <nav class="menu">
+      
+        <a href="#" class="menu-item" onclick="toggleSubMenu('services')">Услуги</a>
+        <hr>
+        <div id="services" class="sub-menu">
+            <a href="#">PRP-терапия</a>
+            <a href="#">Озонотерапия</a>
+            <a href="#">Физиотерапия</a>
+            <a href="#">Мезотерапия</a>
+        </div>
+        <a href="#" class="menu-item" onclick="toggleSubMenu('specialists')">Наши специалисты</a>
+        <hr>
+        <div id="specialists" class="sub-menu">
+            <a href="#">PRP-терапия</a>
+            <a href="#">Озонотерапия</a>
+            <a href="#">Физиотерапия</a>
+            <a href="#">Мезотерапия</a>
+        </div>
+   
+        <a href="#" class="menu-item" onclick="toggleSubMenu('hair-treatment')">Средства для лечения волос</a>
+        <hr>
+        <div id="hair-treatment" class="sub-menu">
+            <a href="#">PRP-терапия</a>
+            <a href="#">Озонотерапия</a>
+            <a href="#">Физиотерапия</a>
+            <a href="#">Мезотерапия</a>
+        </div>
+       
+        <a href="#" class="menu-item" onclick="toggleSubMenu('contacts')">Контакты</a>
+        <hr>
+        <div id="contacts" class="sub-menu">
+            <a href="#">PRP-терапия</a>
+            <a href="#">Озонотерапия</a>
+            <a href="#">Физиотерапия</a>
+            <a href="#">Мезотерапия</a>
+        </div>
+    </nav>
+
+
+
+
+    <div class="info-block">
+        <p>Главная страница - PRP-терапия</p>
+        <h1>PRP-терапия</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare morbi porta arcu sit duis aliquam, massa proin. In cras mattis in nibh aliquet faucibus suscipit blandit adipiscing. Venenatis gravida nam lectus enim fringilla fringilla mattis iaculis magna. Leo <br>dictum semper faucibus aliquam, scelerisque adipiscing est sit laoreet. Ipsum, sapien sit eu viverra tellus interdum lectus.
+            Aliquet venenatis, risus ipsum et ut justo vitae. Fames eu, adipiscing augue quis pellentesque morbi purus neque. Ullamcorper varius mattis augue enim. Bibendum dui netus senectus et fermentum. Ornare at phasellus dictum euismod varius et quis at. Euismod tincidunt <br>suspendisse volutpat non tortor mattis. Rhoncus, nisi, posuere fames posuere sit at. Lacus et in porttitor eget. Eleifend convallis sem nunc, ornare non faucibus sem cursus elit. Nam vitae pharetra, tristique felis dis morbi integer vitae adipiscing.
+            At gravida dignissim purus morbi scelerisque porttitor. Metus non eu tincidunt luctus feugiat ut. Neque arcu arcu aenean et nibh. Mattis nunc interdum vitae, id. Tortor fringilla egestas elementum egestas in amet, quam eu phasellus. Quam tristique nunc, nisl, orci. <br> Nunc lorem egestas quis posuere penatibus bibendum. Mattis tellus augue nulla fringilla vel libero. Orci quis ultrices lorem morbi purus diam blandit diam sit. Nullam non quam diam vulputate orci, congue proin. Turpis elit purus interdum semper suscipit. Ipsum porta amet venenatis praesent nam integer. Integer nulla facilisis accumsan quisque amet, tempor eget vestibulum. </p>
+        <div class="image-row">
+            <img src="img/unsplash_xayCTz6N2nM.png" alt="Изображение 1">
+            <img src="img/unsplash_xayCTz6N2nM.png" alt="Изображение 2">
+            <img src="img/unsplash_xayCTz6N2nM.png" alt="Изображение 3">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare morbi porta arcu sit duis aliquam, massa proin. In cras mattis in nibh aliquet faucibus suscipit blandit adipiscing. Venenatis gravida nam lectus enim fringilla fringilla mattis <br> iaculis magna. Leo dictum semper faucibus aliquam, scelerisque adipiscing est sit laoreet. Ipsum, sapien sit eu viverra tellus interdum lectus.
+            Aliquet venenatis, risus ipsum et ut justo vitae. Fames eu, adipiscing augue quis pellentesque morbi purus neque. Ullamcorper varius mattis augue enim. Bibendum dui netus senectus et fermentum. Ornare at phasellus dictum euismod varius et quis at. <br> Euismod tincidunt suspendisse volutpat non tortor mattis. Rhoncus, nisi, posuere fames posuere sit at. Lacus et in porttitor eget. Eleifend convallis sem nunc, ornare non faucibus sem cursus elit. Nam vitae pharetra, tristique felis dis morbi integer vitae adipiscing.
+            At gravida dignissim purus morbi scelerisque porttitor. Metus non eu tincidunt luctus feugiat ut. Neque arcu arcu aenean et nibh. Mattis nunc interdum vitae, id. Tortor fringilla egestas elementum egestas in amet, quam eu phasellus. Quam tristique  <br> nunc, nisl, orci. Nunc lorem egestas quis posuere penatibus bibendum. Mattis tellus augue nulla fringilla vel libero. Orci quis ultrices lorem morbi purus diam blandit diam sit. Nullam non quam diam vulputate orci, congue proin. Turpis elit purus interdum semper suscipit. Ipsum porta amet venenatis praesent nam integer. Integer nulla facilisis accumsan quisque amet, tempor eget vestibulum. </p>
+    </div>
+</div>
+
+
+
+<div class="down-block">
+    <div class="contact">
+        <a href="">8 (812) 123-45-67</a>
+        <a href="">8 (812) 123-45-67</a>
+        <a class="contact-border-bottom" href="">191123, г. Санкт-Петербург, Невский проспект, д. 11</a>
+        <button>Запись на прием</button>
+        <hr>
+    </div>
+    <div class="container-down">
+        <div class="container-down-section">
+            <h1>Основные ссылки</h1>
+            <a href="#">Наши специалисты</a>
+            <a href="#">Консультация трихолога</a>
+            <a href="#">Фототрихограмма</a>
+        </div>
+        <div class="container-down-section">
+            <h1>Процедуры</h1>
+            <a href="#">PRP-терапия</a>
+            <a href="#">Мезотерапия</a>
+            <a href="#">Озонотерапия</a>
+            <a href="#">Физиотерапия</a>
+        </div>
+        <div class="container-down-section">
+            <h1>Средства для лечения</h1>
+            <a href="#">Азеломакс / Азелофеин</a>
+            <a href="#">Спектрал - ДНС (Spectral - DNC)</a>
+            <a href="#">Simone (Симоне)</a>
+            <a href="#">Эвкапил</a>
+            <a href="#">Фабао - 101</a>
+            <a href="#">Сатура</a>
+            <a href="#">Оптима</a>
+        </div>
+        <div class="container-down-section">
+            <h1>Средства для лечения</h1>
+            <a href="#">Кудзитол</a>
+            <a href="#">Ревивексил</a>
+            <a href="#">Ревивоген</a>
+        </div>
+        <div class="container-down-section-last">
+            <h1>Для бровей и ресниц</h1>
+            <a href="#">Revita EPS (Ревита)</a>
+            <a href="#">Priori (Приори)</a>
+        </div>
+    </div>
+        <div class="sign">
+            <h2>Режим работы</h2>
+            <p>Понедельник - Пятница 11:00 - 21:00</p>
+            <p>Суббота 11:00 - 19:00</p>
+            <p>Воскресенье и дни Государственных <br>праздников - выходной день.</p>
+        </div>
+</div>
+
+<footer>
+    <a href="">Все права защищены © 2007 - 2021</a>
+    <a class="dashed" href="">Лиц. № ЛО-78-01-1234567</a>
+    <a href="">Сделано: d-e-n.ru</a>
+</footer>
+
+<script src="scriptframe.js"></script>
+</body>
+</html>
