@@ -1,263 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-
-
     <header>
-        <div class="profile-icon">
-            <img src="icons/Frame.png" alt="icons/dandruff 1 (Traced).png">
-
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Наши специалисты</a></li>
-                <li><a href="#">Процедуры лечения волос</a></li>
-                <li><a href="#">Средства для лечения волос</a></li>
-            </ul>
-        </nav>
-        <div class="location-info">
-            <div class="location-icon">
-                <img src="icons/Group.png" alt="icons/dandruff 1 (Traced).png">
+        <div class="container">
+            <div>
+                <a class="logo-link" href="#">Сайт Концертно - экскурсионный программ</a>
             </div>
-            <div class="location-address">
-                <p>ул. Карла Маркса</p>
-            </div>
-        </div>
-
-        <button class="appointment-button" id="show-popup">Запись на прием</button>
-        <div class="popup" id="popup">
-            <div class="popup-content">
-                <h2>Запись на прием</h2>
-                <p>Заполните форму ниже для записи на прием:</p>
-                <form>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Ваш Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="date">Дата приема:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <button type="submit">Отправить</button>
-                </form>
-                <button id="close-popup">Закрыть</button>
+            <div class="links">
+                <a href="#">Афиша</a>
+                <img class="img-link-elem" src="Rectangle 29.svg" alt=""/>
+                <a class="img-link-elem" href="#">Заказ билетов</a>
+                <img src="Rectangle 29.svg" alt=""/>
+                <a class="img-link-elem" href="#">Контакты</a>
+                <img src="Rectangle 29.svg" alt=""/>
+                <a class="img-link-elem" href="#">История дворца</a>
+                <img src="Rectangle 29.svg" alt=""/>
+                <a class="img-link-elem" href="#">Галерея</a>
+                <img src="Rectangle 29.svg" alt=""/>
+                <a class="img-link-elem" href="#">Планы залов</a>
             </div>
         </div>
     </header>
-    <!-- НОВЫЙ БЛОК С КАРТИНКОЙ -->
-    <div class="background">
-        <div class="white-overlay">
-            <div class="black-border">
-                <h1>Центр здоровья и лечения волос в Волгограде</h1>
-                <p>Самый современный трихологический центр в Волгоградской области, открытый в 2012 году</p>
-                <button id="redirectButton">Процедуры лечения</button>
+
+    <section class="slider">
+        <div class="slider-container">
+            <img class="slider-main-image" src="slider__main-image.jpg" alt="main-image"/>
+            
+            <div class="slider-preview-wrapper">
+                <div class="slider-card">
+                    <img src="thumb-slider__image.jpg" alt="main-image"/>
+                    <div class="title-card">
+                        Опера VS Оперетта
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="thumb-slider__image-2.jpg" alt="main-image"/>
+                    <div class="title-card">
+                        Антонио Вивальди. Времена года
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="afisha">
+        <div class="container-title-afisha">
+            <div class="title-afisha-container">
+                <div class="title-afisha">
+                    Афиша
+                </div>
+                
+                <div class="events-container">
+                    <img src="heading-section__icon.jpg" alt="icon"/>
+                    <div class="event-title">
+                        Все мероприятия
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-afisha">
+            <div class="tickets">
+                <div class="ticket">
+                    <div class="date">
+                        <div class="day">
+                            3
+                        </div>
+
+                        <div class="month">
+                            июня
+                        </div>
+                    </div>
+
+                    <img class="ticket-poster" src="poster__image.png" alt="poster"/>
+
+                    <div class="desc-ticket">
+                        <div class="name">
+                            Антонио Вивальди. Времена года
+                        </div>
+
+                        <div class="desc">
+                            Посвящение Фрэнку Синатре.
+                        </div>
+
+                        <div class="specification">
+                            <div class="specification-card">
+                                <img class="specification-card-img" src="Vector.png" alt=""/>
+                                <div class="specification-title">
+                                    Джаз
+                                </div>
+                            </div>
+
+                            <div class="specification-card">
+                                <img class="specification-card-img" src="Group.png" alt="time"/>
+                                <div class="specification-title">
+                                    19:00
+                                </div>
+                            </div>
+
+                            <div class="specification-card">
+                                <img class="specification-card-img" src="Vector-2.png" alt="people"/>
+                                <div class="specification-title">
+                                    6+
+                                </div>
+                            </div>
+                        </div>
+
+                
+                    </div>
+                    <a href="#" class="btn-buy-ticket">Заказать билет</a>
+                </div>
+
+                <div class="ticket">
+                    <div class="date">
+                        <div class="day">
+                            30
+                        </div>
+
+                        <div class="month">
+                            июня
+                        </div>
+                    </div>
+
+                    <img class="ticket-poster" src="ticket-img-2.jpg"/>
+
+                    <div class="desc-ticket">
+                        <div class="name">
+                            Опера VS Оперетта
+                        </div>
+
+                        <div class="desc">
+                            Санкт-Петербургский камерный оркестр Olympic Orchestra
+                        </div>
+
+                        <div class="specification">
+                            <div class="specification-card">
+                                <img class="specification-card-img" src="Vector.png" alt=""/>
+                                <div class="specification-title">
+                                    Классика
+                                </div>
+                            </div>
+                        </div>
+
+                
+                    </div>
+                    <a href="#" class="btn-buy-ticket">Заказать билет</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="block-news">
+        <div class="news-conainer">
+            <div class="left">
+                <h1>Новости</h1>
+                <div class="left-container">
+                    <div class="one-block-new">
+                        <img src="news__image.jpg" alt="">
+                        <p class="new-text-1">Переносы / Отмена мероприятий</p>
+                        <p class="perenos-text-1">11.04.2023 г. в 19.00 час. — концерт 
+                        «Опера vs. Оперетта» - ПЕРЕНОС на 05.06.2023 г. 
+                        в 19.00 час.</p>
+                    </div>
+                    
+                    <div class="one-block-new two">
+                        <img src="news__image-2.jpg" alt="">
+                        <p class="new-text-1">Переносы / Отмена мероприятий</p>
+                        <p class="perenos-text-1">11.04.2023 г. в 19.00 час. — концерт 
+                           «Опера vs. Оперетта» - ПЕРЕНОС на 05.06.2023 г.
+                           в 19.00 час</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Right">
+                <div class="img-exurse">
+                    <p>Обзорные экскурсии</p>
+                </div>
+                <div>
+
+                </div>
             </div>
         </div>
     </div>
-    <!-- НОВЫЙ БЛОК С КАРТИНКОЙ -->
-
-    <div class="image-text-block">
-        <img src="img/unsplash_xayCTz6N2nM.png" alt="О Центре">
-        <div class="text-content">
-            <h1>О Центре</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ultrices <br> dictum et aliquet sit luctus mauris elementum
-                interdum. Interdum id in <br>id viverra metus, dignissim arcu nisl porttitor.
-                Non, condimentum <br> morbi porttitor nec mauris vitae consequat mi. Viverra non <br>
-                pellentesque id blandit gravida tristique. Non blandit rhoncus libero in <br>diam
-                cras sapien elementum tristique. At id viverra nullam tincidunt <br> urna dis
-                venenatis. <br></p>
-            <p> At hendrerit pretium turpis leo sem quam in nibh egestas. Nulla
-                vitae, <br>mollis enim tincidunt vitae. Lorem sed morbi sem donec nulla. Risus <br>
-                nullam lacus, velit, amet volutpat. Blandit at risus proin adipiscing <br> platea
-                praesent. Quisque turpis purus est egestas nunc, facilisi. Ut in.</p>
-        </div>
-    </div>
-    <!-- НОВЫЙ БЛОК С КАРТИНКОЙ -->
-    <div class="consultation-block">
-        <div class="text-content-consultation-block">
-            <h1>Консультации <br> по вопросам</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Molestie est lorem commodo in <br> egestas
-                pellentesque ut. Elit nisl a amet.</p>
-        </div>
-        <div class="image-content-consultation-block">
-            <div class="image-row">
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/hair (1) 1 (Traced).png" alt="Изображение 3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis.</p>
-                </div>
-            </div>
-            <div class="image-row">
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/molecule 1 (Traced).png" alt="Изображение 6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-            </div>
-            <div class="image-row">
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/skincare 1 (Traced).png" alt="Изображение 5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-                <div class="image-item">
-                    <img src="icons/dandruff 1 (Traced).png" alt="Изображение 6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- НОВЫЙ БЛОК С КАРТИНКОЙ -->
-    <div class="treatment-block">
-        <div class="text-content-treatment">
-            <h1>Процедуры <br> лечения волос</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Euismod faucibus arcu fames eu nunc lectus
-                semper convallis.<br> Elementum pretium, risus nec in magna in. Interdum diam sit<br> adipiscing arcu,
-                ut
-                condimentum tincidunt. Bibendum eu consequat <br> risus justo fringilla pretium blandit bibendum. <br>In
-                orci,
-                et risus ultrices urna lacus lectus condimentum. Maecenas<br> sagittis, morbi porta nisl. Sed
-                pellentesque donec ultrices nisi.</p>
-        </div>
-        <div class="sub-blocks">
-            <div class="sub-block">
-                <div class="white-border">
-                    <p>PRP-ТЕРАПИЯ</p>
-                </div>
-            </div>
-            <div class="sub-block">
-                <div class="white-border">
-                    <p>МЕЗОТЕРАПИЯ</p>
-                </div>
-            </div>
-            <div class="sub-block">
-                <div class="white-border">
-                    <p>ОЗОНОТЕРАПИЯ</p>
-                </div>
-            </div>
-            <div class="sub-block">
-                <div class="white-border">
-                    <p>ФИЗИОТЕРАПИЯ</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="block-slider">
-        <h1>Результаты лечения</h1>
-        <div class="arrows">
-            <img src="icons/bi_arrow-down-circle-fill-1.png" alt="Стрелка влево" class="prev">
-            <img src="icons/bi_arrow-down-circle-fill.png" alt="Стрелка вправо" class="next">
-        </div>
-        <div class="container">
-            <div class="image-slider">
-                <!-- Первая пара изображений -->
-                <div class="slider" id="slider1">
-                    <img src="img/Rectangle 47 (1).png" class="before-image" alt="Before Image 1">
-                    <img src="img/Rectangle 47.png" class="after-image" alt="After Image 1">
-                    <div class="slider-handle"></div>
-                </div>
-                <!-- Вторая пара изображений -->
-                <div class="slider" id="slider2" style="display: none;">
-                    <img src="img/image 2.png" class="before-image" alt="Before Image 2">
-                    <img src="img/image 1.png" class="after-image" alt="After Image 2">
-                    <div class="slider-handle"></div>
-                </div>
-            </div>
-            <p>Лечение гнездной алопеции</p>
-        </div>
-    </div>
 
 
 
-    <!-- НОВЫЙ БЛОК С КАРТИНКОЙ -->
-    <div class="down-block">
-        <div class="contact">
-            <a href="">8 (812) 123-45-67</a>
-            <a href="">8 (812) 123-45-67</a>
-            <a class="contact-border-bottom" href="">191123, г. Санкт-Петербург, Невский проспект, д. 11</a>
-            <button>Запись на прием</button>
-            <hr>
-        </div>
-        <div class="container-down">
-            <div class="container-down-section">
-                <h1>Основные ссылки</h1>
-                <a href="#">Наши специалисты</a>
-                <a href="#">Консультация трихолога</a>
-                <a href="#">Фототрихограмма</a>
-            </div>
-            <div class="container-down-section">
-                <h1>Процедуры</h1>
-                <a href="#">PRP-терапия</a>
-                <a href="#">Мезотерапия</a>
-                <a href="#">Озонотерапия</a>
-                <a href="#">Физиотерапия</a>
-            </div>
-            <div class="container-down-section">
-                <h1>Средства для лечения</h1>
-                <a href="#">Азеломакс / Азелофеин</a>
-                <a href="#">Спектрал - ДНС (Spectral - DNC)</a>
-                <a href="#">Simone (Симоне)</a>
-                <a href="#">Эвкапил</a>
-                <a href="#">Фабао - 101</a>
-                <a href="#">Сатура</a>
-                <a href="#">Оптима</a>
-            </div>
-            <div class="container-down-section">
-                <h1>Средства для лечения</h1>
-                <a href="#">Кудзитол</a>
-                <a href="#">Ревивексил</a>
-                <a href="#">Ревивоген</a>
-            </div>
-            <div class="container-down-section-last">
-                <h1>Для бровей и ресниц</h1>
-                <a href="#">Revita EPS (Ревита)</a>
-                <a href="#">Priori (Приори)</a>
-            </div>
-        </div>
-        <div class="sign">
-            <h2>Режим работы</h2>
-            <p>Понедельник - Пятница 11:00 - 21:00</p>
-            <p>Суббота 11:00 - 19:00</p>
-            <p>Воскресенье и дни Государственных <br>праздников - выходной день.</p>
-        </div>
-    </div>
 
-    <footer>
-        <a href="">Все права защищены © 2007 - 2021</a>
-        <a class="dashed" href="">Лиц. № ЛО-78-01-1234567</a>
-        <a href="">Сделано: d-e-n.ru</a>
-    </footer>
 
-    <script src="script.js"></script>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+    </table>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 104px;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    height: 104px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.img-link-elem {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.slider {
+    margin-top: 30px;
+}
+
+.slider-preview-wrapper {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.slider-main-image {
+    width: 50%;
+}
+
+.slider-card {
+    display: flex;
+    align-items: center;
+    background-color: #1919190D;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.slider-card img {
+    margin-left: 20px;
+    margin-right: 24px;
+}
+
+.title-card {
+    color: black;
+    font-weight: 600;
+}
+
+.afisha {
+    margin-top: 120px;
+}
+
+.container-title-afisha {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.title-afisha-container {
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+}
+
+.events-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-afisha {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.event-title {
+    font-weight: 700;
+    color: #191919;
+    margin-left: 15px;
+}
+
+.events-container img {
+    width: 15%;
+}
+
+.container-afisha {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets {
+
+    margin-top: 100px;
+}
+
+
+.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 80px;
+    background-color: #1919190D;
+    padding: 22px 60px;
+    border-radius: 10px;
+}
+
+.date {
+    text-align: center;
+    margin-right: 60px;
+}
+
+.day {
+    font-weight: 700;
+    font-size: 54px;
+    color: #191919;
+    opacity: 0.75;
+}
+
+.month {
+    font-size: 700;
+    font-size: 22px;
+    color: #191919;
+    opacity: 0.75;
+}
+
+.ticket-poster {
+    width: 30%;
+}
+
+.desc-ticket {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 210px;
+    margin-left: 50px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 23px;
+    color: #191919;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    opacity: 0.75class="specification-card-img";
+}
+
+.specification {
+    display: flex;
+}
+
+.specification-card {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.specification-title {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+.specification-card-img {
+    width: 30%;
+}
+
+.btn-buy-ticket {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    background-color: #05B093;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.container-news {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-news {
+    font-weight: 700;
+    color: #191919;
+    font-size: 28px;
+    line-height: 67px;
+    margin-bottom: 20px;
+}
+
+.news-cards {
+    display: flex;
+}
+
+.news-card {
+    width: 190px;
+    margin-right: 100px;
+}
+
+.news-card-img {
+    margin-bottom: 32px;
+    width: 120%;
+}
+
+.title-card-news {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #191919;
+}
+
+.desc-card-news {
+    opacity: 0.75;
+    font-weight: 400;
+    font-size: 16px;
+    color: #191919;
+}
+
+.block-news{
+    width: 100%;
+    height: 60vh;
+}
+.news-conainer{
+    width: 75%;
+    height: 100%;
+    background-color: #05B093;
+    margin:0 auto;
+    display: flex;
+}
+.left-container{
+display: flex;
+}
+
+.one-block-new{
+    width: 306px;
+    height: 394px;
+}
+.two{
+    margin-left: 10px;
+}
+.one-block-new img{
+    width: 306px;
+    height: 204px;
+    border-radius: 12px;
+}
+.new-text-1{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    font-size: 24px;
+    font-family: 'EB Garamond', serif;  
+}
+.perenos-text-1{
+    width: 300px;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    width: 636px;
+    height: 127px;
+    font-size: 48px;
+    font-family: 'EB Garamond';
+}
+
+
+.Right{
+    width: 526px;
+    height: 524px;
+    margin-left: 134px;
+}
+.img-exurse{
+    width: 100%;
+    height: 300px;
+    background-image: url(calendar__image.png);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: end;
+}
+.img-exurse p {
+    font-size: 32px;
+    font-family: 'EB Garamond', serif;
+    line-height: 90px;
+    width: 350px;
+    text-align: center;
+    
+}
+	</style>
 </body>
-
 </html>
+
